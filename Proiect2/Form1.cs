@@ -123,6 +123,44 @@ namespace Proiect2
                 form.ShowDialog();
             }
         }
+
+        private async void toolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                var selectedRow = dataGridView1.SelectedRows[0];
+                int productId = Convert.ToInt32(selectedRow.Cells["Id"].Value);
+                await _productService.DeleteProduct(productId);
+                MessageBox.Show("Produs sters cu succes!", "Confirmare", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void dataGridView1_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                var hitTestInfo = dataGridView1.HitTest(e.X, e.Y);
+                if (hitTestInfo.RowIndex >= 0)
+                {
+                    dataGridView1.ClearSelection();
+                    dataGridView1.Rows[hitTestInfo.RowIndex].Selected = true;
+                }
+            }
+        }
+
+        private void toolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                var selectedRow = dataGridView1.SelectedRows[0];
+                int productId = Convert.ToInt32(selectedRow.Cells["Id"].Value);
+                
+                using (UpdateProduct form =  new UpdateProduct(_productService, productId, _productCategoryService))
+                {
+                    form.ShowDialog();
+                }
+            }
+        }
     }
 
 }

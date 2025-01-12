@@ -1,30 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Proiect2\\",
+  "WorkspaceRootPath": "D:\\StoreManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{131FF705-CC7C-4508-AD49-34ED13D34F70}|Proiect2\\Proiect2.csproj|d:\\proiect2\\proiect2\\vanzareform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{131FF705-CC7C-4508-AD49-34ED13D34F70}|Proiect2\\Proiect2.csproj|solutionrelative:proiect2\\vanzareform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{131FF705-CC7C-4508-AD49-34ED13D34F70}|Proiect2\\Proiect2.csproj|d:\\storemanagement\\proiect2\\updateproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{131FF705-CC7C-4508-AD49-34ED13D34F70}|Proiect2\\Proiect2.csproj|solutionrelative:proiect2\\updateproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{131FF705-CC7C-4508-AD49-34ED13D34F70}|Proiect2\\Proiect2.csproj|d:\\proiect2\\proiect2\\istoricvanzariform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{131FF705-CC7C-4508-AD49-34ED13D34F70}|Proiect2\\Proiect2.csproj|solutionrelative:proiect2\\istoricvanzariform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{131FF705-CC7C-4508-AD49-34ED13D34F70}|Proiect2\\Proiect2.csproj|d:\\proiect2\\proiect2\\adauagreform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{131FF705-CC7C-4508-AD49-34ED13D34F70}|Proiect2\\Proiect2.csproj|d:\\storemanagement\\proiect2\\adauagreform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{131FF705-CC7C-4508-AD49-34ED13D34F70}|Proiect2\\Proiect2.csproj|solutionrelative:proiect2\\adauagreform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{131FF705-CC7C-4508-AD49-34ED13D34F70}|Proiect2\\Proiect2.csproj|d:\\proiect2\\proiect2\\adaugarecategorieform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{131FF705-CC7C-4508-AD49-34ED13D34F70}|Proiect2\\Proiect2.csproj|solutionrelative:proiect2\\adaugarecategorieform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{131FF705-CC7C-4508-AD49-34ED13D34F70}|Proiect2\\Proiect2.csproj|d:\\storemanagement\\proiect2\\updateproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{131FF705-CC7C-4508-AD49-34ED13D34F70}|Proiect2\\Proiect2.csproj|solutionrelative:proiect2\\updateproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{131FF705-CC7C-4508-AD49-34ED13D34F70}|Proiect2\\Proiect2.csproj|d:\\proiect2\\proiect2\\adaugarecantitateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{131FF705-CC7C-4508-AD49-34ED13D34F70}|Proiect2\\Proiect2.csproj|solutionrelative:proiect2\\adaugarecantitateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{131FF705-CC7C-4508-AD49-34ED13D34F70}|Proiect2\\Proiect2.csproj|d:\\storemanagement\\proiect2\\entity\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{131FF705-CC7C-4508-AD49-34ED13D34F70}|Proiect2\\Proiect2.csproj|solutionrelative:proiect2\\entity\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{131FF705-CC7C-4508-AD49-34ED13D34F70}|Proiect2\\Proiect2.csproj|d:\\proiect2\\proiect2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{131FF705-CC7C-4508-AD49-34ED13D34F70}|Proiect2\\Proiect2.csproj|d:\\storemanagement\\proiect2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{131FF705-CC7C-4508-AD49-34ED13D34F70}|Proiect2\\Proiect2.csproj|solutionrelative:proiect2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{131FF705-CC7C-4508-AD49-34ED13D34F70}|Proiect2\\Proiect2.csproj|d:\\storemanagement\\proiect2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{131FF705-CC7C-4508-AD49-34ED13D34F70}|Proiect2\\Proiect2.csproj|solutionrelative:proiect2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,85 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 222,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "VanzareForm.cs",
-              "DocumentMoniker": "D:\\Proiect2\\Proiect2\\VanzareForm.cs",
-              "RelativeDocumentMoniker": "Proiect2\\VanzareForm.cs",
-              "ToolTip": "D:\\Proiect2\\Proiect2\\VanzareForm.cs",
-              "RelativeToolTip": "Proiect2\\VanzareForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\StoreManagement\\Proiect2\\Form1.cs",
+              "RelativeDocumentMoniker": "Proiect2\\Form1.cs",
+              "ToolTip": "D:\\StoreManagement\\Proiect2\\Form1.cs",
+              "RelativeToolTip": "Proiect2\\Form1.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAkwKYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T09:57:31.118Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IstoricVanzariForm.cs",
-              "DocumentMoniker": "D:\\Proiect2\\Proiect2\\IstoricVanzariForm.cs",
-              "RelativeDocumentMoniker": "Proiect2\\IstoricVanzariForm.cs",
-              "ToolTip": "D:\\Proiect2\\Proiect2\\IstoricVanzariForm.cs",
-              "RelativeToolTip": "Proiect2\\IstoricVanzariForm.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T09:56:29.405Z",
+              "WhenOpened": "2025-01-12T15:48:36.263Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AdaugareCategorieForm.cs",
-              "DocumentMoniker": "D:\\Proiect2\\Proiect2\\AdaugareCategorieForm.cs",
-              "RelativeDocumentMoniker": "Proiect2\\AdaugareCategorieForm.cs",
-              "ToolTip": "D:\\Proiect2\\Proiect2\\AdaugareCategorieForm.cs",
-              "RelativeToolTip": "Proiect2\\AdaugareCategorieForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\StoreManagement\\Proiect2\\Entity\\Product.cs",
+              "RelativeDocumentMoniker": "Proiect2\\Entity\\Product.cs",
+              "ToolTip": "D:\\StoreManagement\\Proiect2\\Entity\\Product.cs",
+              "RelativeToolTip": "Proiect2\\Entity\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T09:55:24.531Z",
+              "WhenOpened": "2025-01-12T16:57:31.881Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AdaugareCantitateForm.cs",
-              "DocumentMoniker": "D:\\Proiect2\\Proiect2\\AdaugareCantitateForm.cs",
-              "RelativeDocumentMoniker": "Proiect2\\AdaugareCantitateForm.cs",
-              "ToolTip": "D:\\Proiect2\\Proiect2\\AdaugareCantitateForm.cs",
-              "RelativeToolTip": "Proiect2\\AdaugareCantitateForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "AdauagreForm.cs",
+              "DocumentMoniker": "D:\\StoreManagement\\Proiect2\\AdauagreForm.cs",
+              "RelativeDocumentMoniker": "Proiect2\\AdauagreForm.cs",
+              "ToolTip": "D:\\StoreManagement\\Proiect2\\AdauagreForm.cs",
+              "RelativeToolTip": "Proiect2\\AdauagreForm.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAC0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T09:54:21.867Z",
+              "WhenOpened": "2025-01-12T16:49:58.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UpdateProduct.cs",
+              "DocumentMoniker": "D:\\StoreManagement\\Proiect2\\UpdateProduct.cs",
+              "RelativeDocumentMoniker": "Proiect2\\UpdateProduct.cs",
+              "ToolTip": "D:\\StoreManagement\\Proiect2\\UpdateProduct.cs",
+              "RelativeToolTip": "Proiect2\\UpdateProduct.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T16:19:54.524Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AdauagreForm.cs",
-              "DocumentMoniker": "D:\\Proiect2\\Proiect2\\AdauagreForm.cs",
-              "RelativeDocumentMoniker": "Proiect2\\AdauagreForm.cs",
-              "ToolTip": "D:\\Proiect2\\Proiect2\\AdauagreForm.cs",
-              "RelativeToolTip": "Proiect2\\AdauagreForm.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAxwD0AAAAAAAAAAAAAAA==",
+              "Title": "UpdateProduct.cs [Design]",
+              "DocumentMoniker": "D:\\StoreManagement\\Proiect2\\UpdateProduct.cs",
+              "RelativeDocumentMoniker": "Proiect2\\UpdateProduct.cs",
+              "ToolTip": "D:\\StoreManagement\\Proiect2\\UpdateProduct.cs [Design]",
+              "RelativeToolTip": "Proiect2\\UpdateProduct.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T09:52:56.39Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-12T16:03:39.193Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\Proiect2\\Proiect2\\Form1.cs",
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\StoreManagement\\Proiect2\\Form1.cs",
               "RelativeDocumentMoniker": "Proiect2\\Form1.cs",
-              "ToolTip": "D:\\Proiect2\\Proiect2\\Form1.cs",
-              "RelativeToolTip": "Proiect2\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\StoreManagement\\Proiect2\\Form1.cs [Design]",
+              "RelativeToolTip": "Proiect2\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T09:47:50.341Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-12T15:42:21.837Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

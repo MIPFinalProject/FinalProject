@@ -3236,11 +3236,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Proiect2\\Proiect2\\Proiect2.csproj",
+      "projectUniqueName": "D:\\StoreManagement\\Proiect2\\Proiect2.csproj",
       "projectName": "Proiect2",
-      "projectPath": "D:\\Proiect2\\Proiect2\\Proiect2.csproj",
+      "projectPath": "D:\\StoreManagement\\Proiect2\\Proiect2.csproj",
       "packagesPath": "C:\\Users\\bogda\\.nuget\\packages\\",
-      "outputPath": "D:\\Proiect2\\Proiect2\\obj\\",
+      "outputPath": "D:\\StoreManagement\\Proiect2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
