@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 222,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -36,10 +36,23 @@
               "RelativeDocumentMoniker": "Proiect2\\Form1.cs",
               "ToolTip": "D:\\StoreManagement\\Proiect2\\Form1.cs",
               "RelativeToolTip": "Proiect2\\Form1.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAowFgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAcwFgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-12T15:48:36.263Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IstoricVanzariForm.cs",
+              "DocumentMoniker": "D:\\StoreManagement\\Proiect2\\IstoricVanzariForm.cs",
+              "RelativeDocumentMoniker": "Proiect2\\IstoricVanzariForm.cs",
+              "ToolTip": "D:\\StoreManagement\\Proiect2\\IstoricVanzariForm.cs",
+              "RelativeToolTip": "Proiect2\\IstoricVanzariForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T16:00:35.65Z",
               "EditorCaption": ""
             },
             {
@@ -65,25 +78,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-15T15:37:20.861Z",
               "EditorCaption": " [Design]"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IstoricVanzariForm.cs",
-              "DocumentMoniker": "D:\\StoreManagement\\Proiect2\\IstoricVanzariForm.cs",
-              "RelativeDocumentMoniker": "Proiect2\\IstoricVanzariForm.cs",
-              "ToolTip": "D:\\StoreManagement\\Proiect2\\IstoricVanzariForm.cs",
-              "RelativeToolTip": "Proiect2\\IstoricVanzariForm.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAowB0AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T15:37:40.331Z",
-              "EditorCaption": ""
             }
           ]
         }
