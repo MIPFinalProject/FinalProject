@@ -16,6 +16,9 @@
     <Compile Update="IstoricVanzariForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="StergereCategorieForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="UpdateProduct.cs">
       <SubType>Form</SubType>
     </Compile>

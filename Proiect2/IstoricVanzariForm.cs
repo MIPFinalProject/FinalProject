@@ -18,6 +18,7 @@ namespace Proiect2
         private readonly SalesHistoryService _salesHistoryService;
         private readonly ProductService _productService;
         private readonly ProductCategoryService _productCategoryService;
+        private List<SaleHistoryDto> _fullSalesHistory;
 
         public IstoricVanzariForm(SalesHistoryService salesHistoryService, ProductService productService, ProductCategoryService productCategoryService)
         {
@@ -35,7 +36,7 @@ namespace Proiect2
             var products = await _productService.GetAllProducts();
             var categories = await _productCategoryService.GetAllProductCategories();
 
-            List<SaleHistoryDto> list = new List<SaleHistoryDto>();
+            _fullSalesHistory = new List<SaleHistoryDto>();
 
             foreach (SalesHistory sale in sales)
             {
@@ -52,11 +53,33 @@ namespace Proiect2
                     ProductName = product.Name,
                     CategoryName = categories.FirstOrDefault(cat => cat.Id == product.CategoryId)?.Name ?? "N/A"
                 };
-                list.Add(newSale);
+                _fullSalesHistory.Add(newSale);
             }
 
-            dataGridView1.DataSource = list;
+            dataGridView1.DataSource = _fullSalesHistory;
+        }
+
+        private void FilterSalesHistory(string searchText)
+        {
+            if (string.IsNullOrWhiteSpace(searchText))
+            {
+                dataGridView1.DataSource = _fullSalesHistory;
+            }
+            else if (int.TryParse(searchText, out int saleId))
+            {
+                var filteredList = _fullSalesHistory.Where(sale => sale.Id == saleId).ToList();
+                dataGridView1.DataSource = filteredList;
+            }
+            else
+            {
+                dataGridView1.DataSource = new List<SaleHistoryDto>();
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            string searchText = textBox1.Text;
+            FilterSalesHistory(searchText);
         }
     }
-
 }

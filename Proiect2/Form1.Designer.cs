@@ -42,6 +42,7 @@
             toolStripMenuItem3 = new ToolStripMenuItem();
             button1 = new Button();
             textBox1 = new TextBox();
+            toolStripMenuItem8 = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             contextMenuStrip1.SuspendLayout();
             menuStrip1.SuspendLayout();
@@ -63,19 +64,19 @@
             // 
             contextMenuStrip1.Items.AddRange(new ToolStripItem[] { toolStripMenuItem6, toolStripMenuItem7 });
             contextMenuStrip1.Name = "contextMenuStrip1";
-            contextMenuStrip1.Size = new Size(181, 70);
+            contextMenuStrip1.Size = new Size(158, 48);
             // 
             // toolStripMenuItem6
             // 
             toolStripMenuItem6.Name = "toolStripMenuItem6";
-            toolStripMenuItem6.Size = new Size(180, 22);
+            toolStripMenuItem6.Size = new Size(157, 22);
             toolStripMenuItem6.Text = "Delete";
             toolStripMenuItem6.Click += toolStripMenuItem6_Click;
             // 
             // toolStripMenuItem7
             // 
             toolStripMenuItem7.Name = "toolStripMenuItem7";
-            toolStripMenuItem7.Size = new Size(180, 22);
+            toolStripMenuItem7.Size = new Size(157, 22);
             toolStripMenuItem7.Text = "Update Product";
             toolStripMenuItem7.Click += toolStripMenuItem7_Click;
             // 
@@ -86,7 +87,7 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { toolStripMenuItem1, toolStripMenuItem2, toolStripMenuItem3 });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { toolStripMenuItem1, toolStripMenuItem2, toolStripMenuItem8, toolStripMenuItem3 });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(886, 24);
@@ -99,7 +100,6 @@
             toolStripMenuItem1.Name = "toolStripMenuItem1";
             toolStripMenuItem1.Size = new Size(116, 20);
             toolStripMenuItem1.Text = "Adaugare produse";
-            toolStripMenuItem1.Click += toolStripMenuItem1_Click;
             // 
             // toolStripMenuItem4
             // 
@@ -148,6 +148,13 @@
             textBox1.TabIndex = 4;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
+            // toolStripMenuItem8
+            // 
+            toolStripMenuItem8.Name = "toolStripMenuItem8";
+            toolStripMenuItem8.Size = new Size(114, 20);
+            toolStripMenuItem8.Text = "Stergere categorie";
+            toolStripMenuItem8.Click += toolStripMenuItem8_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -183,5 +190,6 @@
         private ContextMenuStrip contextMenuStrip2;
         private ToolStripMenuItem toolStripMenuItem6;
         private ToolStripMenuItem toolStripMenuItem7;
+        private ToolStripMenuItem toolStripMenuItem8;
     }
 }

@@ -298,3 +298,4 @@ D:\StoreManagement\Proiect2\obj\Debug\net8.0-windows\Proiect2.pdb
 D:\StoreManagement\Proiect2\obj\Debug\net8.0-windows\Proiect2.genruntimeconfig.cache
 D:\StoreManagement\Proiect2\obj\Debug\net8.0-windows\ref\Proiect2.dll
 D:\StoreManagement\Proiect2\obj\Debug\net8.0-windows\Proiect2.UpdateProduct.resources
+D:\StoreManagement\Proiect2\obj\Debug\net8.0-windows\Proiect2.StergereCategorieForm.resources

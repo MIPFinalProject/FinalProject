@@ -59,10 +59,6 @@ namespace Proiect2
             await LoadProductsAsync();
         }
 
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-        }
-
         private async void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -154,11 +150,19 @@ namespace Proiect2
             {
                 var selectedRow = dataGridView1.SelectedRows[0];
                 int productId = Convert.ToInt32(selectedRow.Cells["Id"].Value);
-                
-                using (UpdateProduct form =  new UpdateProduct(_productService, productId, _productCategoryService))
+
+                using (UpdateProduct form = new UpdateProduct(_productService, productId, _productCategoryService))
                 {
                     form.ShowDialog();
                 }
+            }
+        }
+
+        private void toolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            using (StergereCategorieForm form = new StergereCategorieForm(_productCategoryService))
+            {
+                form.ShowDialog();
             }
         }
     }
