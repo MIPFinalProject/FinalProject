@@ -11,8 +11,8 @@ using Proiect2.Data;
 namespace Proiect2.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250108192021_SalesHistory")]
-    partial class SalesHistory
+    [Migration("20250115175351_AddCategoryEntity")]
+    partial class AddCategoryEntity
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -81,6 +81,29 @@ namespace Proiect2.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("SalesHistory");
+                });
+
+            modelBuilder.Entity("Proiect2.Entity.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
                 });
 #pragma warning restore 612, 618
         }

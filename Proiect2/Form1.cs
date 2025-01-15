@@ -11,22 +11,15 @@ namespace Proiect2
         private readonly ProductService _productService;
         private readonly ProductCategoryService _productCategoryService;
         private readonly SalesHistoryService _salesHistoryService;
+        private readonly UserService _userService;
 
-        public Form1()
+        public Form1(ProductService productService, SalesHistoryService salesHistoryService, ProductCategoryService productCategoryService, UserService userService)
         {
+            _productService = productService;
+            _salesHistoryService = salesHistoryService;
+            _productCategoryService = productCategoryService;
+            _userService = userService;
             InitializeComponent();
-
-            var context = DbContextFactory.CreateDbContext();
-            var repository = new ProductRepository(context);
-            _productService = new ProductService(repository);
-
-            var productCategoryRepository = new ProductCategoryRepository(context);
-            _productCategoryService = new ProductCategoryService(productCategoryRepository);
-
-            var salesHistoryRepository = new SalesHistoryRepository(context);
-            _salesHistoryService = new SalesHistoryService(salesHistoryRepository);
-
-            LoadProductsAsync();
         }
 
         private async Task LoadProductsAsync()

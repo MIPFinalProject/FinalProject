@@ -13,6 +13,7 @@ namespace Proiect2.Data
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductCategory> Categories { get; set; }
         public DbSet<SalesHistory> SalesHistory { get; set; }
+        public DbSet<User> Users { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
