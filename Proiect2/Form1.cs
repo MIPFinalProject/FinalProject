@@ -14,14 +14,22 @@ namespace Proiect2
         private readonly ProductCategoryService _productCategoryService;
         private readonly SalesHistoryService _salesHistoryService;
         private readonly UserService _userService;
+        private readonly User _currentUser;
 
-        public Form1(ProductService productService, SalesHistoryService salesHistoryService, ProductCategoryService productCategoryService, UserService userService)
+        public Form1(ProductService productService, SalesHistoryService salesHistoryService, ProductCategoryService productCategoryService, UserService userService, User currentUser)
         {
             _productService = productService;
             _salesHistoryService = salesHistoryService;
             _productCategoryService = productCategoryService;
             _userService = userService;
+            _currentUser = currentUser;
             InitializeComponent();
+
+            if (_currentUser.Role != "admin")
+            {
+                HideMenuItems();
+                DisableProductDeletionAndUpdate();
+            }
 
             button1.Text = LocalizationManager.GetString("Refresh");
             toolStripMenuItem1.Text = LocalizationManager.GetString("AddProducts");
@@ -32,6 +40,19 @@ namespace Proiect2
             toolStripMenuItem5.Text = LocalizationManager.GetString("AddQuantity");
             toolStripMenuItem6.Text = LocalizationManager.GetString("Delete");
             toolStripMenuItem7.Text = LocalizationManager.GetString("UpdateProduct");
+        }
+
+        private void HideMenuItems()
+        {
+            foreach (ToolStripMenuItem item in menuStrip1.Items)
+            {
+                item.Visible = false;
+            }
+        }
+        private void DisableProductDeletionAndUpdate()
+        {
+            toolStripMenuItem6.Visible = false;
+            toolStripMenuItem7.Visible = false;
         }
 
         private async Task LoadProductsAsync()
@@ -193,6 +214,20 @@ namespace Proiect2
             {
                 form.ShowDialog();
             }
+        }
+
+        private void usersToolStripMenu_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void toolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+            using (UserManagementForm form = new UserManagementForm(_userService))
+            {
+                form.ShowDialog();
+            }
+
         }
     }
 

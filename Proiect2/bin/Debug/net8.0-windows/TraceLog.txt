@@ -9,3 +9,54 @@ INFO: 1/16/2025 11:11:21 AM - Opening delete product category form
 INFO: 1/16/2025 11:11:22 AM - Opening add product category form
 INFO: 1/16/2025 11:11:24 AM - Opening add product form
 INFO: 1/16/2025 11:11:26 AM - Opening add product quantity form
+INFO: 1/16/2025 2:03:26 PM - Language set to RO
+INFO: 1/16/2025 2:03:29 PM - Authentification successfully
+INFO: 1/16/2025 2:03:32 PM - Opening product sales history form
+INFO: 1/16/2025 2:38:32 PM - Register button clicked
+Attempting to add user: a
+User registered successfully: a
+INFO: 1/16/2025 2:38:36 PM - Register successfully
+INFO: 1/16/2025 2:38:37 PM - Authentification successfully
+INFO: 1/16/2025 2:38:39 PM - Refresh button clicked
+INFO: 1/16/2025 2:38:39 PM - Load products successfully
+INFO: 1/16/2025 2:40:42 PM - Authentification successfully
+INFO: 1/16/2025 2:40:46 PM - Opening add product category form
+INFO: 1/16/2025 2:40:48 PM - Opening delete product category form
+INFO: 1/16/2025 2:40:49 PM - Opening product sales history form
+INFO: 1/16/2025 2:40:55 PM - Refresh button clicked
+INFO: 1/16/2025 2:40:55 PM - Load products successfully
+INFO: 1/16/2025 2:40:57 PM - Opening delete product category form
+INFO: 1/16/2025 2:42:42 PM - Authentification successfully
+INFO: 1/16/2025 2:43:28 PM - Register button clicked
+Attempting to add user: user
+User registered successfully: user
+INFO: 1/16/2025 2:43:40 PM - Register successfully
+INFO: 1/16/2025 2:43:44 PM - Authentification successfully
+INFO: 1/16/2025 2:43:46 PM - Refresh button clicked
+INFO: 1/16/2025 2:43:46 PM - Load products successfully
+INFO: 1/16/2025 2:43:52 PM - Refresh button clicked
+INFO: 1/16/2025 2:43:52 PM - Load products successfully
+INFO: 1/16/2025 2:45:56 PM - Failed to logIn
+INFO: 1/16/2025 2:46:02 PM - Authentification successfully
+INFO: 1/16/2025 2:46:03 PM - Refresh button clicked
+INFO: 1/16/2025 2:46:03 PM - Load products successfully
+INFO: 1/16/2025 2:46:03 PM - Refresh button clicked
+INFO: 1/16/2025 2:46:03 PM - Load products successfully
+INFO: 1/16/2025 2:46:37 PM - Authentification successfully
+INFO: 1/16/2025 2:46:41 PM - Refresh button clicked
+INFO: 1/16/2025 2:46:41 PM - Load products successfully
+INFO: 1/16/2025 2:46:43 PM - Opening update product form
+INFO: 1/16/2025 2:46:46 PM - Opening update product form
+INFO: 1/16/2025 2:46:56 PM - Product updated successfully
+INFO: 1/16/2025 2:46:57 PM - Refresh button clicked
+INFO: 1/16/2025 2:46:57 PM - Load products successfully
+INFO: 1/16/2025 2:47:06 PM - Opening product sales history form
+INFO: 1/16/2025 2:47:14 PM - Opening add product quantity form
+INFO: 1/16/2025 2:47:21 PM - Quantity added successfully
+INFO: 1/16/2025 2:47:23 PM - Refresh button clicked
+INFO: 1/16/2025 2:47:23 PM - Load products successfully
+INFO: 1/16/2025 2:47:25 PM - Opening add product category form
+INFO: 1/16/2025 2:47:33 PM - Opening delete product category form
+INFO: 1/16/2025 2:47:35 PM - Opening product sales history form
+INFO: 1/16/2025 2:47:51 PM - Refresh button clicked
+INFO: 1/16/2025 2:47:51 PM - Load products successfully

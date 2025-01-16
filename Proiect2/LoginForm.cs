@@ -5,6 +5,7 @@ using Proiect2.Localization;
 using Proiect2.Repository;
 using Proiect2.Service;
 using LoggingLibrary;
+using Proiect2.Entity;
 
 namespace Proiect2
 {
@@ -44,10 +45,10 @@ namespace Proiect2
 
             try
             {
-                await _userService.AuthenticateUser(username, password);
+                User user = await _userService.AuthenticateUser(username, password);
                 TraceLogger.LogInfo("Authentification successfully");
 
-                using (var form = new Form1(_productService, _salesHistoryService, _productCategoryService, _userService))
+                using (var form = new Form1(_productService, _salesHistoryService, _productCategoryService, _userService, user))
                 {
                     this.Hide();
                     form.ShowDialog();
@@ -90,6 +91,19 @@ namespace Proiect2
         {
             loginBtn.Text = LocalizationManager.GetString("Login");
             registerBtn.Text = LocalizationManager.GetString("Register");
+        }
+
+        private void changePasswordBtn_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            using (var form = new ModifyPasswordForm(_userService))
+            {
+                form.ShowDialog();
+            }
         }
     }
 }

@@ -19,6 +19,9 @@
     <Compile Update="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ModifyPasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="RegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -26,6 +29,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UpdateProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UserManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UserManagementForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="VanzareForm.cs">

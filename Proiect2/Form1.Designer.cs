@@ -41,8 +41,11 @@
             toolStripMenuItem2 = new ToolStripMenuItem();
             toolStripMenuItem8 = new ToolStripMenuItem();
             toolStripMenuItem3 = new ToolStripMenuItem();
+            toolStripMenuItem9 = new ToolStripMenuItem();
+            usersToolStripMenu = new ToolStripMenuItem();
             button1 = new Button();
             textBox1 = new TextBox();
+            toolStripMenuItem10 = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             contextMenuStrip1.SuspendLayout();
             menuStrip1.SuspendLayout();
@@ -87,7 +90,7 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { toolStripMenuItem1, toolStripMenuItem2, toolStripMenuItem8, toolStripMenuItem3 });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { toolStripMenuItem1, toolStripMenuItem2, toolStripMenuItem8, toolStripMenuItem3, toolStripMenuItem10 });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(886, 24);
@@ -136,6 +139,21 @@
             toolStripMenuItem3.Text = "Istoric Vanzari";
             toolStripMenuItem3.Click += toolStripMenuItem3_Click;
             // 
+            // toolStripMenuItem9
+            // 
+            toolStripMenuItem9.Name = "toolStripMenuItem9";
+            toolStripMenuItem9.Size = new Size(146, 24);
+            toolStripMenuItem9.Text = "Stergere categorie";
+            toolStripMenuItem9.Click += toolStripMenuItem8_Click;
+            // 
+            // usersToolStripMenu
+            // 
+            usersToolStripMenu.Alignment = ToolStripItemAlignment.Right;
+            usersToolStripMenu.Name = "usersToolStripMenu";
+            usersToolStripMenu.Size = new Size(144, 24);
+            usersToolStripMenu.Text = "User management";
+            usersToolStripMenu.Click += usersToolStripMenu_Click;
+            // 
             // button1
             // 
             button1.Location = new Point(75, 127);
@@ -154,6 +172,14 @@
             textBox1.Size = new Size(144, 23);
             textBox1.TabIndex = 4;
             textBox1.TextChanged += textBox1_TextChanged;
+            // 
+            // toolStripMenuItem10
+            // 
+            toolStripMenuItem10.Alignment = ToolStripItemAlignment.Right;
+            toolStripMenuItem10.Name = "toolStripMenuItem10";
+            toolStripMenuItem10.Size = new Size(116, 20);
+            toolStripMenuItem10.Text = "User management";
+            toolStripMenuItem10.Click += toolStripMenuItem10_Click;
             // 
             // Form1
             // 
@@ -191,5 +217,8 @@
         private ToolStripMenuItem toolStripMenuItem6;
         private ToolStripMenuItem toolStripMenuItem7;
         private ToolStripMenuItem toolStripMenuItem8;
+        private ToolStripMenuItem toolStripMenuItem9;
+        private ToolStripMenuItem usersToolStripMenu;
+        private ToolStripMenuItem toolStripMenuItem10;
     }
 }

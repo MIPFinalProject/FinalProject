@@ -36,6 +36,8 @@
             toolStripMenuItem1 = new ToolStripMenuItem();
             toolStripMenuItem2 = new ToolStripMenuItem();
             toolStripMenuItem3 = new ToolStripMenuItem();
+            changePasswordBtn = new Button();
+            button1 = new Button();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -98,22 +100,44 @@
             // toolStripMenuItem2
             // 
             toolStripMenuItem2.Name = "toolStripMenuItem2";
-            toolStripMenuItem2.Size = new Size(180, 22);
+            toolStripMenuItem2.Size = new Size(90, 22);
             toolStripMenuItem2.Text = "RO";
             toolStripMenuItem2.Click += toolStripMenuItem2_Click;
             // 
             // toolStripMenuItem3
             // 
             toolStripMenuItem3.Name = "toolStripMenuItem3";
-            toolStripMenuItem3.Size = new Size(180, 22);
+            toolStripMenuItem3.Size = new Size(90, 22);
             toolStripMenuItem3.Text = "EN";
             toolStripMenuItem3.Click += toolStripMenuItem3_Click;
+            // 
+            // changePasswordBtn
+            // 
+            changePasswordBtn.Location = new Point(12, 410);
+            changePasswordBtn.Name = "changePasswordBtn";
+            changePasswordBtn.Size = new Size(158, 29);
+            changePasswordBtn.TabIndex = 5;
+            changePasswordBtn.Text = "Change Password";
+            changePasswordBtn.UseVisualStyleBackColor = true;
+            changePasswordBtn.Click += changePasswordBtn_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(30, 293);
+            button1.Name = "button1";
+            button1.Size = new Size(186, 23);
+            button1.TabIndex = 6;
+            button1.Text = "Change password | User";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // LoginForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(700, 338);
+            Controls.Add(button1);
+            Controls.Add(changePasswordBtn);
             Controls.Add(registerBtn);
             Controls.Add(loginBtn);
             Controls.Add(passwordTextBox);
@@ -139,5 +163,7 @@
         private ToolStripMenuItem toolStripMenuItem1;
         private ToolStripMenuItem toolStripMenuItem2;
         private ToolStripMenuItem toolStripMenuItem3;
+        private Button changePasswordBtn;
+        private Button button1;
     }
 }

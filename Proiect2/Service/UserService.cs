@@ -47,7 +47,7 @@ namespace Proiect2.Service
             await _repository.Delete(id);
         }
 
-        public async Task AuthenticateUser(string username, string password)
+        public async Task<User> AuthenticateUser(string username, string password)
         {
             var users = await _repository.GetAll();
             foreach (var user in users)
@@ -57,12 +57,38 @@ namespace Proiect2.Service
                     var decryptedPassword = _cryptoService.Decrypt(user.Password);
                     if (decryptedPassword == password)
                     {
-                        return;
+                        return user;
                     }
                 }
             }
 
             throw new Exception("Invalid username or password");
+        }
+
+        public async Task ChangeUsernameAndPassword(string username, string oldPassword, string newUsername, string newPassword)
+        {
+            var users = await _repository.GetAll();
+            foreach (var user in users)
+            {
+                if (user.Username == username)
+                {
+                    var decryptedPassword = _cryptoService.Decrypt(user.Password);
+                    if (decryptedPassword == oldPassword)
+                    {
+                        if (!string.IsNullOrEmpty(newUsername))
+                        {
+                            user.Username = newUsername;
+                        }
+                        if (!string.IsNullOrEmpty(newPassword))
+                        {
+                            user.Password = _cryptoService.Encrypt(newPassword);
+                        }
+                        await _repository.Update(user);
+                        return;
+                    }
+                }
+            }
+            throw new Exception("Invalid username or old password");
         }
     }
 }
