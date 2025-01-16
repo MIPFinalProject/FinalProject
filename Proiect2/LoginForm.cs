@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using Proiect2.Data;
+using Proiect2.Localization;
 using Proiect2.Repository;
 using Proiect2.Service;
 
@@ -16,6 +17,8 @@ namespace Proiect2
         public LoginForm()
         {
             InitializeComponent();
+
+            LocalizationManager.SetLanguage("en");
 
             var context = DbContextFactory.CreateDbContext();
 
@@ -60,6 +63,18 @@ namespace Proiect2
             {
                 form.ShowDialog();
             }
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            LocalizationManager.SetLanguage("ro");
+            MessageBox.Show("Language set to RO", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            LocalizationManager.SetLanguage("en");
+            MessageBox.Show("Language set to EN", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

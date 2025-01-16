@@ -1,6 +1,7 @@
 using Proiect2.Data;
 using Proiect2.DTO;
 using Proiect2.Entity;
+using Proiect2.Localization;
 using Proiect2.Repository;
 using Proiect2.Service;
 
@@ -20,6 +21,8 @@ namespace Proiect2
             _productCategoryService = productCategoryService;
             _userService = userService;
             InitializeComponent();
+
+            button1.Text = LocalizationManager.GetString("LabelOK");
         }
 
         private async Task LoadProductsAsync()

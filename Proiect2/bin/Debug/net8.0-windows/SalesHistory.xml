@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SalesHistory>
+  <Sale>
+    <Id>1</Id>
+    <ProductId>1</ProductId>
+    <ProductName>audi</ProductName>
+    <CategoryName>abc</CategoryName>
+    <Quantity>3</Quantity>
+  </Sale>
+  <Sale>
+    <Id>2</Id>
+    <ProductId>1</ProductId>
+    <ProductName>audi</ProductName>
+    <CategoryName>abc</CategoryName>
+    <Quantity>2</Quantity>
+  </Sale>
+</SalesHistory>

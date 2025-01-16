@@ -14,6 +14,14 @@
         },
         "runtime": {
           "Proiect2.dll": {}
+        },
+        "resources": {
+          "en/Proiect2.resources.dll": {
+            "locale": "en"
+          },
+          "ro/Proiect2.resources.dll": {
+            "locale": "ro"
+          }
         }
       },
       "Humanizer.Core/2.14.1": {

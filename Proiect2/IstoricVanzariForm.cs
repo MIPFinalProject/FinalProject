@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using Proiect2.DTO;
 using Proiect2.Entity;
 using Proiect2.Service;
@@ -81,5 +82,34 @@ namespace Proiect2
             string searchText = textBox1.Text;
             FilterSalesHistory(searchText);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string filePath = "SalesHistory.xml";
+
+                var xmlDoc = new XDocument(
+                    new XElement("SalesHistory",
+                        _fullSalesHistory.Select(sale => new XElement("Sale",
+                            new XElement("Id", sale.Id),
+                            new XElement("ProductId", sale.ProductId),
+                            new XElement("ProductName", sale.ProductName),
+                            new XElement("CategoryName", sale.CategoryName),
+                            new XElement("Quantity", sale.Quantity)
+                        ))
+                    )
+                );
+
+                xmlDoc.Save(filePath);
+
+                MessageBox.Show($"Datele au fost exportate cu succes în {filePath}.", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Eroare la exportul datelor: {ex.Message}", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
     }
 }
