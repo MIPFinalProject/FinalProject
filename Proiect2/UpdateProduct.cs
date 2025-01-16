@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LoggingLibrary;
 using Proiect2.Entity;
+using Proiect2.Localization;
 using Proiect2.Service;
 
 namespace Proiect2
@@ -20,6 +22,15 @@ namespace Proiect2
         public UpdateProduct(ProductService productService, int productId, ProductCategoryService productCategoryService)
         {
             InitializeComponent();
+
+            label2.Text = LocalizationManager.GetString("Name");
+            label3.Text = LocalizationManager.GetString("Description");
+            label4.Text = LocalizationManager.GetString("EntryDate");
+            label5.Text = LocalizationManager.GetString("ExpiryDate");
+            label6.Text = LocalizationManager.GetString("Quantity");
+            label7.Text = LocalizationManager.GetString("Category");
+            button1.Text = LocalizationManager.GetString("UpdateProduct");
+
             _productService = productService;
             _productId = productId;
             _categoryService = productCategoryService;
@@ -60,6 +71,7 @@ namespace Proiect2
             product.CategoryId = (int)comboBox1.SelectedValue;
             await _productService.UpdateProduct(product);
             MessageBox.Show("Produs actualizat cu succes!", "Confirmare", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            TraceLogger.LogInfo("Product updated successfully");
         }
     }
 }

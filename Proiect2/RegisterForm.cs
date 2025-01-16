@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Windows.Forms;
+using LoggingLibrary;
 using Proiect2.Entity;
+using Proiect2.Localization;
 using Proiect2.Service;
 
 namespace Proiect2
@@ -13,6 +15,10 @@ namespace Proiect2
         public RegisterForm(UserService userService)
         {
             InitializeComponent();
+
+            registerBtn.Text = LocalizationManager.GetString("Register");
+            cancelBtn.Text = LocalizationManager.GetString("Cancel");
+
             _userService = userService;
         }
 
@@ -42,9 +48,11 @@ namespace Proiect2
                 MessageBox.Show("User registered successfully");
                 Trace.WriteLine("User registered successfully: " + username);
                 this.Close();
+                TraceLogger.LogInfo("Register successfully");
             }
             catch (Exception ex)
             {
+                TraceLogger.LogError("Errror occured when trying to register");
                 MessageBox.Show("Error creating user: " + ex.Message);
                 Trace.WriteLine("Error creating user: " + ex.Message);
             }
@@ -52,6 +60,7 @@ namespace Proiect2
 
         private void cancelBtn_Click(object sender, EventArgs e)
         {
+            TraceLogger.LogInfo("Cancel button clicked");
             this.Close();
         }
     }

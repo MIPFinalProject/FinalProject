@@ -110,7 +110,7 @@
             // 
             // numericUpDown1
             // 
-            numericUpDown1.Location = new Point(256, 210);
+            numericUpDown1.Location = new Point(256, 212);
             numericUpDown1.Name = "numericUpDown1";
             numericUpDown1.Size = new Size(120, 23);
             numericUpDown1.TabIndex = 10;
@@ -118,7 +118,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(195, 212);
+            label5.Location = new Point(188, 214);
             label5.Name = "label5";
             label5.Size = new Size(55, 15);
             label5.TabIndex = 11;
@@ -126,7 +126,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(224, 297);
+            button2.Location = new Point(188, 284);
             button2.Name = "button2";
             button2.Size = new Size(177, 23);
             button2.TabIndex = 13;
@@ -137,7 +137,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(152, 250);
+            label6.Location = new Point(152, 247);
             label6.Name = "label6";
             label6.Size = new Size(98, 15);
             label6.TabIndex = 14;
@@ -146,7 +146,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(256, 247);
+            comboBox1.Location = new Point(256, 244);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(121, 23);
             comboBox1.TabIndex = 15;
@@ -155,7 +155,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(653, 426);
             Controls.Add(comboBox1);
             Controls.Add(label6);
             Controls.Add(button2);

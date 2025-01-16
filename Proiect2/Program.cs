@@ -1,3 +1,5 @@
+using Proiect2.Localization;
+
 namespace Proiect2
 {
     internal static class Program
@@ -11,6 +13,7 @@ namespace Proiect2
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
+            LocalizationManager.SetLanguage("en");
             Application.Run(new LoginForm());
         }
     }

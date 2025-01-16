@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "Proiect2/1.0.0": {
         "dependencies": {
+          "LoggingLibrary": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.0",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.0"
@@ -814,7 +815,15 @@
           }
         }
       },
-      "System.Threading.Channels/7.0.0": {}
+      "System.Threading.Channels/7.0.0": {},
+      "LoggingLibrary/1.0.0": {
+        "runtime": {
+          "LoggingLibrary.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
     }
   },
   "libraries": {
@@ -1172,6 +1181,11 @@
       "sha512": "sha512-qmeeYNROMsONF6ndEZcIQ+VxR4Q/TX/7uIVLJqtwIWL7dDWeh0l1UIqgo4wYyjG//5lUNhwkLDSFl+pAWO6oiA==",
       "path": "system.threading.channels/7.0.0",
       "hashPath": "system.threading.channels.7.0.0.nupkg.sha512"
+    },
+    "LoggingLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

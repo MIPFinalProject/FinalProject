@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LoggingLibrary;
+using Proiect2.Localization;
 using Proiect2.Service;
 
 namespace Proiect2
@@ -17,6 +19,10 @@ namespace Proiect2
         public StergereCategorieForm(ProductCategoryService productCategory)
         {
             InitializeComponent();
+
+            label1.Text = LocalizationManager.GetString("Category");
+            button1.Text = LocalizationManager.GetString("DeleteCategory");
+
             _categoryService = productCategory;
             LoadCategoriesAsync();
         }
@@ -33,6 +39,7 @@ namespace Proiect2
         {
             await _categoryService.DeleteProductCategory((int)comboBox1.SelectedValue);
             MessageBox.Show("Categorie stearsa cu succes!", "Confirmare", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            TraceLogger.LogInfo("Category deleted successfully");
             LoadCategoriesAsync();
         }
     }

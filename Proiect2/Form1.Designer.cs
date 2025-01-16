@@ -39,10 +39,10 @@
             toolStripMenuItem4 = new ToolStripMenuItem();
             toolStripMenuItem5 = new ToolStripMenuItem();
             toolStripMenuItem2 = new ToolStripMenuItem();
+            toolStripMenuItem8 = new ToolStripMenuItem();
             toolStripMenuItem3 = new ToolStripMenuItem();
             button1 = new Button();
             textBox1 = new TextBox();
-            toolStripMenuItem8 = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             contextMenuStrip1.SuspendLayout();
             menuStrip1.SuspendLayout();
@@ -122,6 +122,13 @@
             toolStripMenuItem2.Text = "Adaugare categorie";
             toolStripMenuItem2.Click += toolStripMenuItem2_Click;
             // 
+            // toolStripMenuItem8
+            // 
+            toolStripMenuItem8.Name = "toolStripMenuItem8";
+            toolStripMenuItem8.Size = new Size(114, 20);
+            toolStripMenuItem8.Text = "Stergere categorie";
+            toolStripMenuItem8.Click += toolStripMenuItem8_Click;
+            // 
             // toolStripMenuItem3
             // 
             toolStripMenuItem3.Name = "toolStripMenuItem3";
@@ -133,7 +140,7 @@
             // 
             button1.Location = new Point(75, 127);
             button1.Name = "button1";
-            button1.Size = new Size(65, 23);
+            button1.Size = new Size(76, 23);
             button1.TabIndex = 3;
             button1.Text = "Refresh";
             button1.UseVisualStyleBackColor = true;
@@ -141,19 +148,12 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(146, 128);
+            textBox1.Location = new Point(169, 127);
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "Cauta dupa nume";
             textBox1.Size = new Size(144, 23);
             textBox1.TabIndex = 4;
             textBox1.TextChanged += textBox1_TextChanged;
-            // 
-            // toolStripMenuItem8
-            // 
-            toolStripMenuItem8.Name = "toolStripMenuItem8";
-            toolStripMenuItem8.Size = new Size(114, 20);
-            toolStripMenuItem8.Text = "Stergere categorie";
-            toolStripMenuItem8.Click += toolStripMenuItem8_Click;
             // 
             // Form1
             // 

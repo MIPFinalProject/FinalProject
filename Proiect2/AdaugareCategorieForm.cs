@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LoggingLibrary;
 using Proiect2.Entity;
+using Proiect2.Localization;
 using Proiect2.Service;
 
 namespace Proiect2
@@ -19,6 +21,10 @@ namespace Proiect2
         public AdaugareCategorieForm(ProductCategoryService productCategoryService)
         {
             InitializeComponent();
+
+            label1.Text = LocalizationManager.GetString("CategoryName");
+            button1.Text = LocalizationManager.GetString("AddCategory");
+
             _productCategoryService = productCategoryService;
         }
 
@@ -32,11 +38,13 @@ namespace Proiect2
             if (string.IsNullOrWhiteSpace(productCategory.Name))
             {
                 MessageBox.Show("Numele categoriei este obligatoriu!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                TraceLogger.LogError("Category name is mandatory");
                 return;
             }
 
             await _productCategoryService.AddProductCategory(productCategory);
             MessageBox.Show("Categorie adaugata cu succes!", "Confirmare", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            TraceLogger.LogInfo("Category added successfully");
         }
     }
 

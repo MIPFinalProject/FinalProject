@@ -1,0 +1,11 @@
+INFO: 1/16/2025 10:54:23 AM - Authentification successfully
+INFO: 1/16/2025 11:11:09 AM - Authentification successfully
+INFO: 1/16/2025 11:11:10 AM - Refresh button clicked
+INFO: 1/16/2025 11:11:10 AM - Load products successfully
+INFO: 1/16/2025 11:11:12 AM - Opening sale product page
+INFO: 1/16/2025 11:11:15 AM - Sale made successfully
+INFO: 1/16/2025 11:11:18 AM - Opening product sales history form
+INFO: 1/16/2025 11:11:21 AM - Opening delete product category form
+INFO: 1/16/2025 11:11:22 AM - Opening add product category form
+INFO: 1/16/2025 11:11:24 AM - Opening add product form
+INFO: 1/16/2025 11:11:26 AM - Opening add product quantity form

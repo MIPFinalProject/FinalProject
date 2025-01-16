@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LoggingLibrary;
+using Proiect2.Localization;
 using Proiect2.Service;
 
 namespace Proiect2
@@ -18,6 +20,11 @@ namespace Proiect2
         public AdaugareCantitateForm(ProductService productService)
         {
             InitializeComponent();
+
+            label1.Text = LocalizationManager.GetString("ProductId");
+            label2.Text = LocalizationManager.GetString("Quantity");
+            button1.Text = LocalizationManager.GetString("AddQuantity");
+
             _productService = productService;
         }
 
@@ -30,15 +37,18 @@ namespace Proiect2
                 {
                     await _productService.AddProductQuantity(productId, (int)numericUpDown1.Value);
                     MessageBox.Show("Cantitate adaugata cu succes", "Confirmare", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    TraceLogger.LogInfo("Quantity added successfully");
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message, "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    TraceLogger.LogError("Error when trying to add quantity");
                 }
             }
             else
             {
                 MessageBox.Show("Date insuficiente", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                TraceLogger.LogError("Insufficient data");
             }
         }
     }

@@ -52,7 +52,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(76, 169);
+            button1.Location = new Point(66, 167);
             button1.Name = "button1";
             button1.Size = new Size(158, 23);
             button1.TabIndex = 2;
@@ -64,7 +64,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(373, 304);
             Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(comboBox1);

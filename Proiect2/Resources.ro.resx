@@ -117,7 +117,73 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AddCategory" xml:space="preserve">
+    <value>Adauga categorie</value>
+  </data>
+  <data name="AddNewProduct" xml:space="preserve">
+    <value>Adauga produs nou</value>
+  </data>
+  <data name="AddProduct" xml:space="preserve">
+    <value>Adauga produs</value>
+  </data>
+  <data name="AddProducts" xml:space="preserve">
+    <value>Adaugare produse</value>
+  </data>
+  <data name="AddQuantity" xml:space="preserve">
+    <value>Adauga cantitate</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Anuleaza</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Categorie</value>
+  </data>
+  <data name="CategoryName" xml:space="preserve">
+    <value>Nume categorie</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Sterge</value>
+  </data>
+  <data name="DeleteCategory" xml:space="preserve">
+    <value>Stergere categorie</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Descriere</value>
+  </data>
+  <data name="EntryDate" xml:space="preserve">
+    <value>Data intrare</value>
+  </data>
+  <data name="ExpiryDate" xml:space="preserve">
+    <value>Data expirare</value>
+  </data>
+  <data name="ExportSalesToXML" xml:space="preserve">
+    <value>Exporta vanzarile XML</value>
+  </data>
   <data name="LabelOK" xml:space="preserve">
     <value>abvc</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Logare</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nume</value>
+  </data>
+  <data name="ProductId" xml:space="preserve">
+    <value>Id produs</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Cantitate</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Reincarca</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Inregistreaza</value>
+  </data>
+  <data name="SalesHistory" xml:space="preserve">
+    <value>Istoric vanzari</value>
+  </data>
+  <data name="UpdateProduct" xml:space="preserve">
+    <value>Actualizeaza produs</value>
   </data>
 </root>

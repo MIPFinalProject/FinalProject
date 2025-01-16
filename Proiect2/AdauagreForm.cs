@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LoggingLibrary;
 using Proiect2.Entity;
+using Proiect2.Localization;
 using Proiect2.Service;
 
 namespace Proiect2
@@ -20,6 +22,15 @@ namespace Proiect2
         public AdauagreForm(ProductService productService, ProductCategoryService categoryService)
         {
             InitializeComponent();
+
+            label1.Text = LocalizationManager.GetString("Name");
+            label2.Text = LocalizationManager.GetString("Description");
+            label3.Text = LocalizationManager.GetString("EntryDate");
+            label4.Text = LocalizationManager.GetString("ExpiryDate");
+            label5.Text = LocalizationManager.GetString("Quantity");
+            label6.Text = LocalizationManager.GetString("CategoryName");
+            button2.Text = LocalizationManager.GetString("AddProduct");
+
             _productService = productService;
             _categoryService = categoryService;
 
@@ -49,10 +60,12 @@ namespace Proiect2
             if (product.Quantity <= 0 || string.IsNullOrWhiteSpace(product.Description) || string.IsNullOrWhiteSpace(product.Name))
             {
                 MessageBox.Show("Date insuficiente", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                TraceLogger.LogError("Error when trying to add a new product");
             }
             else
             {
                 await _productService.AddProduct(product);
+                TraceLogger.LogInfo("Product added successfully");
                 MessageBox.Show("Produsul a fost adaugat cu succes!", "Confirmare", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }

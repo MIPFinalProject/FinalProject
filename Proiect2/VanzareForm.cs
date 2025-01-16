@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LoggingLibrary;
 using Proiect2.Entity;
 using Proiect2.Service;
 
@@ -38,10 +39,12 @@ namespace Proiect2
             if ((int)numericUpDown1.Value == 0)
             {
                 MessageBox.Show("Cantitate insuficienta!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                TraceLogger.LogError("Insufficient quantity");
             }
             else if ((int)numericUpDown1.Value > _sellProduct.Quantity)
             {
                 MessageBox.Show("Cantitate indisponibila!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                TraceLogger.LogError("Quantity unavailable");
             }
             else
             {
@@ -58,12 +61,14 @@ namespace Proiect2
                 {
                     await _productService.DeleteProduct(_sellProduct.Id);
                     MessageBox.Show("Vanzare efectuata cu succes!", "Confirmare", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    TraceLogger.LogInfo("Sale made successfully");
                     Close();
                 }
                 else
                 {
                     await _productService.SellProduct(_sellProduct);
                     textBox6.Text = _sellProduct.Quantity.ToString();
+                    TraceLogger.LogInfo("Sale made successfully");
                     MessageBox.Show("Vanzare efectuata cu succes!", "Confirmare", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }

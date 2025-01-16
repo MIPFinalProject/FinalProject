@@ -1,0 +1,12 @@
+D:\StoreManagement\LoggingLibrary\bin\Debug\net8.0\LoggingLibrary.deps.json
+D:\StoreManagement\LoggingLibrary\bin\Debug\net8.0\LoggingLibrary.dll
+D:\StoreManagement\LoggingLibrary\bin\Debug\net8.0\LoggingLibrary.pdb
+D:\StoreManagement\LoggingLibrary\obj\Debug\net8.0\LoggingLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\StoreManagement\LoggingLibrary\obj\Debug\net8.0\LoggingLibrary.AssemblyInfoInputs.cache
+D:\StoreManagement\LoggingLibrary\obj\Debug\net8.0\LoggingLibrary.AssemblyInfo.cs
+D:\StoreManagement\LoggingLibrary\obj\Debug\net8.0\LoggingLibrary.csproj.CoreCompileInputs.cache
+D:\StoreManagement\LoggingLibrary\obj\Debug\net8.0\LoggingLibrary.sourcelink.json
+D:\StoreManagement\LoggingLibrary\obj\Debug\net8.0\LoggingLibrary.dll
+D:\StoreManagement\LoggingLibrary\obj\Debug\net8.0\refint\LoggingLibrary.dll
+D:\StoreManagement\LoggingLibrary\obj\Debug\net8.0\LoggingLibrary.pdb
+D:\StoreManagement\LoggingLibrary\obj\Debug\net8.0\ref\LoggingLibrary.dll

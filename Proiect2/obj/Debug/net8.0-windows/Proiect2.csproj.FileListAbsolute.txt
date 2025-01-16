@@ -462,3 +462,5 @@ D:\StoreManagement\Proiect2\obj\Debug\net8.0-windows\Proiect2.Resources.en.resou
 D:\StoreManagement\Proiect2\obj\Debug\net8.0-windows\Proiect2.Resources.ro.resources
 D:\StoreManagement\Proiect2\obj\Debug\net8.0-windows\en\Proiect2.resources.dll
 D:\StoreManagement\Proiect2\obj\Debug\net8.0-windows\ro\Proiect2.resources.dll
+D:\StoreManagement\Proiect2\bin\Debug\net8.0-windows\LoggingLibrary.dll
+D:\StoreManagement\Proiect2\bin\Debug\net8.0-windows\LoggingLibrary.pdb

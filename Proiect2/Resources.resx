@@ -117,7 +117,73 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AddCategory" xml:space="preserve">
+    <value>Add category</value>
+  </data>
+  <data name="AddNewProduct" xml:space="preserve">
+    <value>AddNewProduct</value>
+  </data>
+  <data name="AddProduct" xml:space="preserve">
+    <value>Add product</value>
+  </data>
+  <data name="AddProducts" xml:space="preserve">
+    <value>Add products</value>
+  </data>
+  <data name="AddQuantity" xml:space="preserve">
+    <value>Add quantity</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="CategoryName" xml:space="preserve">
+    <value>Category name</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DeleteCategory" xml:space="preserve">
+    <value>Delete category</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="EntryDate" xml:space="preserve">
+    <value>Entry date</value>
+  </data>
+  <data name="ExpiryDate" xml:space="preserve">
+    <value>Expiry date</value>
+  </data>
+  <data name="ExportSalesToXML" xml:space="preserve">
+    <value>Export sales to XML</value>
+  </data>
   <data name="LabelOK" xml:space="preserve">
     <value>abc</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="ProductId" xml:space="preserve">
+    <value>Product id</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="SalesHistory" xml:space="preserve">
+    <value>Sales history</value>
+  </data>
+  <data name="UpdateProduct" xml:space="preserve">
+    <value>Update product</value>
   </data>
 </root>

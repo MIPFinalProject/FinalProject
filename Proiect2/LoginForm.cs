@@ -4,6 +4,7 @@ using Proiect2.Data;
 using Proiect2.Localization;
 using Proiect2.Repository;
 using Proiect2.Service;
+using LoggingLibrary;
 
 namespace Proiect2
 {
@@ -18,7 +19,8 @@ namespace Proiect2
         {
             InitializeComponent();
 
-            LocalizationManager.SetLanguage("en");
+            loginBtn.Text = LocalizationManager.GetString("Login");
+            registerBtn.Text = LocalizationManager.GetString("Register");
 
             var context = DbContextFactory.CreateDbContext();
 
@@ -43,6 +45,7 @@ namespace Proiect2
             try
             {
                 await _userService.AuthenticateUser(username, password);
+                TraceLogger.LogInfo("Authentification successfully");
 
                 using (var form = new Form1(_productService, _salesHistoryService, _productCategoryService, _userService))
                 {
@@ -53,12 +56,14 @@ namespace Proiect2
             }
             catch (Exception ex)
             {
+                TraceLogger.LogInfo("Failed to logIn");
                 MessageBox.Show("Authentication failed: " + ex.Message);
             }
         }
 
         private void registerBtn_Click(object sender, EventArgs e)
         {
+            TraceLogger.LogInfo("Register button clicked");
             using (var form = new RegisterForm(_userService))
             {
                 form.ShowDialog();
@@ -68,13 +73,23 @@ namespace Proiect2
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
             LocalizationManager.SetLanguage("ro");
+            ApplyTranslations();
+            TraceLogger.LogInfo("Language set to RO");
             MessageBox.Show("Language set to RO", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
             LocalizationManager.SetLanguage("en");
+            ApplyTranslations();
+            TraceLogger.LogInfo("Language set to EN");
             MessageBox.Show("Language set to EN", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void ApplyTranslations()
+        {
+            loginBtn.Text = LocalizationManager.GetString("Login");
+            registerBtn.Text = LocalizationManager.GetString("Register");
         }
     }
 }

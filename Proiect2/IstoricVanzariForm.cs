@@ -8,8 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using LoggingLibrary;
 using Proiect2.DTO;
 using Proiect2.Entity;
+using Proiect2.Localization;
 using Proiect2.Service;
 
 namespace Proiect2
@@ -24,6 +26,9 @@ namespace Proiect2
         public IstoricVanzariForm(SalesHistoryService salesHistoryService, ProductService productService, ProductCategoryService productCategoryService)
         {
             InitializeComponent();
+
+            button1.Text = LocalizationManager.GetString("ExportSalesToXML");
+
             _salesHistoryService = salesHistoryService;
             _productService = productService;
             _productCategoryService = productCategoryService;
@@ -58,7 +63,26 @@ namespace Proiect2
             }
 
             dataGridView1.DataSource = _fullSalesHistory;
+
+            TranslateColumnHeaders();
         }
+
+        private void TranslateColumnHeaders()
+        {
+
+            if (dataGridView1.Columns["ProductId"] != null)
+                dataGridView1.Columns["ProductId"].HeaderText = LocalizationManager.GetString("ProductId");
+
+            if (dataGridView1.Columns["ProductName"] != null)
+                dataGridView1.Columns["ProductName"].HeaderText = LocalizationManager.GetString("Name");
+
+            if (dataGridView1.Columns["CategoryName"] != null)
+                dataGridView1.Columns["CategoryName"].HeaderText = LocalizationManager.GetString("CategoryName");
+
+            if (dataGridView1.Columns["Quantity"] != null)
+                dataGridView1.Columns["Quantity"].HeaderText = LocalizationManager.GetString("Quantity");
+        }
+
 
         private void FilterSalesHistory(string searchText)
         {
@@ -104,10 +128,12 @@ namespace Proiect2
                 xmlDoc.Save(filePath);
 
                 MessageBox.Show($"Datele au fost exportate cu succes în {filePath}.", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                TraceLogger.LogInfo("Data exported to XML successfully");
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Eroare la exportul datelor: {ex.Message}", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                TraceLogger.LogError("Error when trying to export data");
             }
         }
 

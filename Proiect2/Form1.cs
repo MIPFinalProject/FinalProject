@@ -1,3 +1,4 @@
+using LoggingLibrary;
 using Proiect2.Data;
 using Proiect2.DTO;
 using Proiect2.Entity;
@@ -22,11 +23,20 @@ namespace Proiect2
             _userService = userService;
             InitializeComponent();
 
-            button1.Text = LocalizationManager.GetString("LabelOK");
+            button1.Text = LocalizationManager.GetString("Refresh");
+            toolStripMenuItem1.Text = LocalizationManager.GetString("AddProducts");
+            toolStripMenuItem2.Text = LocalizationManager.GetString("AddCategory");
+            toolStripMenuItem8.Text = LocalizationManager.GetString("DeleteCategory");
+            toolStripMenuItem3.Text = LocalizationManager.GetString("SalesHistory");
+            toolStripMenuItem4.Text = LocalizationManager.GetString("AddNewProduct");
+            toolStripMenuItem5.Text = LocalizationManager.GetString("AddQuantity");
+            toolStripMenuItem6.Text = LocalizationManager.GetString("Delete");
+            toolStripMenuItem7.Text = LocalizationManager.GetString("UpdateProduct");
         }
 
         private async Task LoadProductsAsync()
         {
+            TraceLogger.LogInfo("Load products successfully");
             var products = await _productService.GetAllProducts();
             var categories = await _productCategoryService.GetAllProductCategories();
 
@@ -44,6 +54,18 @@ namespace Proiect2
             }).ToList();
 
             dataGridView1.DataSource = productsWithCategories;
+
+            TranslateColumnHeaders();
+        }
+
+        private void TranslateColumnHeaders()
+        {
+            dataGridView1.Columns["Name"].HeaderText = LocalizationManager.GetString("Name");
+            dataGridView1.Columns["Description"].HeaderText = LocalizationManager.GetString("Description");
+            dataGridView1.Columns["EntryDate"].HeaderText = LocalizationManager.GetString("EntryDate");
+            dataGridView1.Columns["ExpiryDate"].HeaderText = LocalizationManager.GetString("ExpiryDate");
+            dataGridView1.Columns["Quantity"].HeaderText = LocalizationManager.GetString("Quantity");
+            dataGridView1.Columns["CategoryName"].HeaderText = LocalizationManager.GetString("CategoryName");
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -52,6 +74,7 @@ namespace Proiect2
 
         private async void button1_Click(object sender, EventArgs e)
         {
+            TraceLogger.LogInfo("Refresh button clicked");
             await LoadProductsAsync();
         }
 
@@ -63,6 +86,8 @@ namespace Proiect2
 
                 int id = Convert.ToInt32(row.Cells["Id"].Value);
                 Product product = await _productService.GetProductById(id);
+
+                TraceLogger.LogInfo("Opening sale product page");
 
                 using (VanzareForm form = new VanzareForm(_productService, _salesHistoryService, product))
                 {
@@ -86,6 +111,7 @@ namespace Proiect2
 
         private void toolStripMenuItem4_Click(object sender, EventArgs e)
         {
+            TraceLogger.LogInfo("Opening add product form");
             using (AdauagreForm form = new AdauagreForm(_productService, _productCategoryService))
             {
                 form.ShowDialog();
@@ -94,6 +120,7 @@ namespace Proiect2
 
         private void toolStripMenuItem5_Click(object sender, EventArgs e)
         {
+            TraceLogger.LogInfo("Opening add product quantity form");
             using (AdaugareCantitateForm form = new AdaugareCantitateForm(_productService))
             {
                 form.ShowDialog();
@@ -102,6 +129,7 @@ namespace Proiect2
 
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
+            TraceLogger.LogInfo("Opening add product category form");
             using (AdaugareCategorieForm form = new AdaugareCategorieForm(_productCategoryService))
             {
                 form.ShowDialog();
@@ -110,6 +138,7 @@ namespace Proiect2
 
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
+            TraceLogger.LogInfo("Opening product sales history form");
             using (IstoricVanzariForm form = new IstoricVanzariForm(_salesHistoryService, _productService, _productCategoryService))
             {
                 form.ShowDialog();
@@ -120,6 +149,7 @@ namespace Proiect2
         {
             if (dataGridView1.SelectedRows.Count > 0)
             {
+                TraceLogger.LogInfo("Delete product successfully");
                 var selectedRow = dataGridView1.SelectedRows[0];
                 int productId = Convert.ToInt32(selectedRow.Cells["Id"].Value);
                 await _productService.DeleteProduct(productId);
@@ -147,6 +177,8 @@ namespace Proiect2
                 var selectedRow = dataGridView1.SelectedRows[0];
                 int productId = Convert.ToInt32(selectedRow.Cells["Id"].Value);
 
+                TraceLogger.LogInfo("Opening update product form");
+
                 using (UpdateProduct form = new UpdateProduct(_productService, productId, _productCategoryService))
                 {
                     form.ShowDialog();
@@ -156,6 +188,7 @@ namespace Proiect2
 
         private void toolStripMenuItem8_Click(object sender, EventArgs e)
         {
+            TraceLogger.LogInfo("Opening delete product category form");
             using (StergereCategorieForm form = new StergereCategorieForm(_productCategoryService))
             {
                 form.ShowDialog();
