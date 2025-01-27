@@ -3246,31 +3246,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bogda\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/salageanioan/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\StoreManagement\\Proiect2\\Proiect2.csproj",
+      "projectUniqueName": "/Users/salageanioan/RiderProjects/StoreManagement/Proiect2/Proiect2.csproj",
       "projectName": "Proiect2",
-      "projectPath": "D:\\StoreManagement\\Proiect2\\Proiect2.csproj",
-      "packagesPath": "C:\\Users\\bogda\\.nuget\\packages\\",
-      "outputPath": "D:\\StoreManagement\\Proiect2\\obj\\",
+      "projectPath": "/Users/salageanioan/RiderProjects/StoreManagement/Proiect2/Proiect2.csproj",
+      "packagesPath": "/Users/salageanioan/.nuget/packages/",
+      "outputPath": "/Users/salageanioan/RiderProjects/StoreManagement/Proiect2/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\bogda\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/salageanioan/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0-windows"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {},
         "https://nuget.pkg.github.com/EstiemDevelopment/index.json": {}
       },
@@ -3278,8 +3271,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "D:\\StoreManagement\\LoggingLibrary\\LoggingLibrary.csproj": {
-              "projectPath": "D:\\StoreManagement\\LoggingLibrary\\LoggingLibrary.csproj"
+            "/Users/salageanioan/RiderProjects/StoreManagement/LoggingLibrary/LoggingLibrary.csproj": {
+              "projectPath": "/Users/salageanioan/RiderProjects/StoreManagement/LoggingLibrary/LoggingLibrary.csproj"
             }
           }
         }
@@ -3292,7 +3285,7 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "direct"
+        "auditMode": "all"
       },
       "SdkAnalysisLevel": "9.0.100"
     },
@@ -3334,7 +3327,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/Users/salageanioan/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
